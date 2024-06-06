@@ -1,0 +1,56 @@
+.navbar-section {
+    background-color: #f8f8f8;
+    padding: 10px;
+  }
+  
+  .navsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title h2 {
+    margin: 0;
+  }
+  
+  .search .search1 {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .Signin {
+    position: relative;
+  }
+  
+  .cart {
+    position: relative;
+  }
+  
+  .cart span {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+  
+  .submenu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .submenu ul li {
+    display: inline;
+  }
+  
+  .submenu ul li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #333;
+  }
+  

@@ -1,0 +1,353 @@
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar-section {
+  background-color: #2874f0;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.title h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.search {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.search1 {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.Signin h2, .cart {
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.Signin a, .cart a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart span {
+  background-color: #ff5f00;
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.submenu {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submenu ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.submenu ul li {
+  margin: 0 10px;
+}
+
+.submenu ul li a {
+  text-decoration: none;
+  color: #2874f0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.submenu ul li a:hover {
+  color: #ff5f00;
+}
+
+/* Page Section Styles */
+.pageSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.mobile-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobile-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+}
+
+.mobile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pageimg img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.promodel {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #dddddd;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #888888;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navsection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .submenu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .submenu ul li {
+    margin: 5px 0;
+  }
+
+  .pageSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Heading Styles */
+h2 {
+  font-size: 28px;
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Main Content Section Styles */
+.prosection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Box Styles */
+.imgbox {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgbox:hover {
+  transform: scale(1.05);
+}
+
+.proimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Individual Product Page Styles */
+.indpage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.indimg {
+  flex: 1;
+  max-width: 400px;
+}
+
+.indimg img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.inddetails {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.space {
+  margin-bottom: 20px;
+}
+
+.indcompany h1,
+.indmodel h2,
+.indprice h1,
+.inddescription h2 {
+  color: #333;
+}
+
+.indprice h1 {
+  color: #ff5f00;
+}
+
+/* User Cart Container */
+.user-cart-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.login-form-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.login-form-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-form-input:focus {
+  border-color: #007bff;
+}
+
+.login-form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form-button:hover {
+  background-color: #0056b3;
+}
+.home-link {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover {
+  color: #0056b3;
+}
